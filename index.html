@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Welcome to Hello Park - A beautiful virtual park experience">
+    <title>Hello Park</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <h1 class="logo">🌳 Hello Park</h1>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link" aria-label="Go to home section">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link" aria-label="Go to about section">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#activities" class="nav-link" aria-label="Go to activities section">Activities</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link" aria-label="Go to contact section">Contact</a>
+                </li>
+            </ul>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span class="hamburger"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero" role="banner">
+        <div class="hero-background">
+            <img src="assets/park-background.jpg" alt="Beautiful park landscape with trees and walking paths" class="hero-image">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h2 class="hero-title">Welcome to Hello Park</h2>
+                <p class="hero-subtitle">Discover nature's beauty in the heart of the city</p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" id="explore-btn" aria-label="Explore the park">
+                        Explore Now
+                    </button>
+                    <button class="btn btn-secondary" id="learn-more-btn" aria-label="Learn more about the park">
+                        Learn More
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator" aria-hidden="true">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about" role="main">
+        <div class="container">
+            <div class="section-header">
+                <h3 class="section-title">About Our Park</h3>
+                <p class="section-subtitle">A green oasis where community and nature unite</p>
+            </div>
+            <div class="about-grid">
+                <div class="about-card glass-card">
+                    <div class="card-icon">🌿</div>
+                    <h4 class="card-title">Natural Beauty</h4>
+                    <p class="card-description">
+                        Immerse yourself in 50 acres of carefully maintained gardens, 
+                        walking trails, and native wildlife habitats.
+                    </p>
+                </div>
+                <div class="about-card glass-card">
+                    <div class="card-icon">👨‍👩‍👧‍👦</div>
+                    <h4 class="card-title">Family Friendly</h4>
+                    <p class="card-description">
+                        Safe, clean, and welcoming spaces for families to create 
+                        lasting memories together in nature.
+                    </p>
+                </div>
+                <div class="about-card glass-card">
+                    <div class="card-icon">🏃‍♀️</div>
+                    <h4 class="card-title">Active Lifestyle</h4>
+                    <p class="card-description">
+                        Multiple fitness trails, outdoor gym equipment, and 
+                        recreational areas for all fitness levels.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Activities Section -->
+    <section id="activities" class="activities">
+        <div class="container">
+            <div class="section-header">
+                <h3 class="section-title">Park Activities</h3>
+                <p class="section-subtitle">Something for everyone to enjoy</p>
+            </div>
+            <div class="activities-grid">
+                <article class="activity-item" tabindex="0">
+                    <div class="activity-image">
+                        <div class="activity-placeholder">🚶‍♀️</div>
+                    </div>
+                    <div class="activity-content">
+                        <h4 class="activity-title">Walking Trails</h4>
+                        <p class="activity-description">
+                            Scenic paths winding through diverse landscapes, 
+                            perfect for morning walks or evening strolls.
+                        </p>
+                    </div>
+                </article>
+                <article class="activity-item" tabindex="0">
+                    <div class="activity-image">
+                        <div class="activity-placeholder">🧺</div>
+                    </div>
+                    <div class="activity-content">
+                        <h4 class="activity-title">Picnic Areas</h4>
+                        <p class="activity-description">
+                            Designated spots with tables and grills for 
+                            family gatherings and outdoor dining experiences.
+                        </p>
+                    </div>
+                </article>
+                <article class="activity-item" tabindex="0">
+                    <div class="activity-image">
+                        <div class="activity-placeholder">🏸</div>
+                    </div>
+                    <div class="activity-content">
+                        <h4 class="activity-title">Sports Courts</h4>
+                        <p class="activity-description">
+                            Basketball, tennis, and badminton courts available 
+                            for recreational and competitive play.
+                        </p>
+                    </div>
+                </article>
+                <article class="activity-item" tabindex="0">
+                    <div class="activity-image">
+                        <div class="activity-placeholder">🦆</div>
+                    </div>
+                    <div class="activity-content">
+                        <h4 class="activity-title">Wildlife Watching</h4>
+                        <p class="activity-description">
+                            Observe local birds, squirrels, and other wildlife 
+                            in their natural habitat throughout the park.
+                        </p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h3 class="section-title">Visit Us</h3>
+                <p class="section-subtitle">Plan your perfect park experience</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <div class="info-icon">📍</div>
+                        <div class="info-content">
+                            <h4>Location</h4>
+                            <p>123 Park Avenue<br>Green City, GC 12345</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">⏰</div>
+                        <div class="info-content">
+                            <h4>Hours</h4>
+                            <p>Daily: 6:00 AM - 9:00 PM<br>Year-round access</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">📞</div>
+                        <div class="info-content">
+                            <h4>Contact</h4>
+                            <p>Phone: (555) 123-PARK<br>Email: info@hellopark.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-container">
+                    <form class="contact-form glass-card" id="contact-form" novalidate>
+                        <h4>Send us a message</h4>
+                        <div class="form-group">
+                            <label for="name" class="form-label">Name</label>
+                            <input 
+                                type="text" 
+                                id="name" 
+                                name="name" 
+                                class="form-input" 
+                                required 
+                                aria-describedby="name-error"
+                            >
+                            <span class="error-message" id="name-error" role="alert"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email</label>
+                            <input 
+                                type="email" 
+                                id="email" 
+                                name="email" 
+                                class="form-input" 
+                                required 
+                                aria-describedby="email-error"
+                            >
+                            <span class="error-message" id="email-error" role="alert"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea 
+                                id="message" 
+                                name="message" 
+                                class="form-textarea" 
+                                rows="4" 
+                                required 
+                                aria-describedby="message-error"
+                            ></textarea>
+                            <span class="error-message" id="message-error" role="alert"></span>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h4>🌳 Hello Park</h4>
+                    <p>Creating memorable outdoor experiences for our community</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-section">
+                        <h5>Quick Links</h5>
+                        <ul>
+                            <li><a href="#home" aria-label="Go to home section">Home</a></li>
+                            <li><a href="#about" aria-label="Go to about section">About</a></li>
+                            <li><a href="#activities" aria-label="Go to activities section">Activities</a></li>
+                            <li><a href="#contact" aria-label="Go to contact section">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h5>Follow Us</h5>
+                        <div class="social-links">
+                            <a href="#" class="social-link" aria-label="Follow us on Facebook">📘</a>
+                            <a href="#" class="social-link" aria-label="Follow us on Twitter">🐦</a>
+                            <a href="#" class="social-link" aria-label="Follow us on Instagram">📷</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Hello Park. All rights reserved. | Made with 💚 for nature lovers</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Loading Overlay -->
+    <div class="loading-overlay" id="loading-overlay" aria-hidden="true">
+        <div class="loading-spinner"></div>
+    </div>
+
+    <!-- Success Message -->
+    <div class="success-message" id="success-message" role="alert" aria-live="polite">
+        <div class="success-content">
+            <span class="success-icon">✅</span>
+            <span class="success-text">Message sent successfully!</span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
